@@ -43,4 +43,8 @@ if ($conn->query($create_table) === TRUE) {
 } else {
     die("Error creating table: " . $conn->error);
 }
+
+
+
+
 ?>
