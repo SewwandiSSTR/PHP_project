@@ -1,0 +1,241 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    }
+    /*navigation bar css*/
+    
+a{
+  text-decoration: none;
+}
+    header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        box-shadow: 0 0 10px #000;
+        background: black;
+    }
+    #chk1{display:none;}
+    i{color: #fff;
+    cursor: pointer; 
+    }
+    .logo{
+        color: #e78f38;
+        margin-left: 50px;
+        flex: 1;
+        text-transform: uppercase;
+    }
+    header ul{
+        
+        display: flex;
+        justify-content:space-evenly;
+    }
+    header ul li {
+        list-style:none;
+        padding: 10px;
+    
+    }
+    header ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        
+    }
+    header ul li a:hover{color: #e78f38;}
+    .menu{
+        font-size: 2.5em;
+        display: none;
+    }
+    
+    /*footer css*/
+    footer{
+        height:100px;
+        padding-top:0.4%;
+        background-color: #000000f2;
+        opacity: 0.9;
+        padding-left:42%;
+        justify-content: center;
+        color: white;
+        font-size: 12px;
+    }
+    .f_p {
+    
+    color: #fff;
+    }
+    .f_p:hover{
+    color: #e78f38;
+    }
+  /*contac us css*/
+  body {
+    line-height: 1.6;
+    background-color: #fffdf9;
+    color: #333;
+    background-color: black;
+  }
+  
+  
+  
+  .hero {
+    text-align: center;
+    background-image:url(../contactus/img/bannerpic.jpg);
+  }
+  
+  
+  
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    gap: 30px;
+  
+  }
+  
+  .contact-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    flex: 1;
+    max-width: 400px;
+    
+  }
+  
+  .contact-card {
+    background:white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.715);
+    color: white;
+    border: 2px solid rgb(164, 109, 7);
+    box-shadow:rgb(164, 109, 7) 2px 2px 2px ;
+    
+  }
+  
+  .contact-form-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 65%;
+    
+    border :10px red;
+    
+    
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border:2px solid rgb(164, 109, 7) ;
+    padding: 20px;
+    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+  }
+  
+  form input, form textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(235, 188, 101, 0.901);
+    
+  }
+  
+  form button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background-color: darkorange;
+  }
+  
+  .map iframe {
+
+    width:80%;
+    height:40vh;
+    
+    border: rgb(189, 134, 32) solid 6px;
+    border-radius: 10px;
+    margin-left: 64px;
+    margin-top: 40px;
+  }
+  .banner{
+    max-width: 100%;
+    height: 30vh;
+    margin-top: 20px;
+    background-image: url(../img/bannerpic.jpg);
+    max-width: 100%;
+    height: 30vh;
+    margin-top: 20px;
+   background-position: center;
+   background-size: cover;}
+  .h1{
+    color: #f0f8f4;
+    font-size:50px;
+  }
+  .img2 img{
+    width:80%;
+    height:40vh;
+    margin-left:13%;
+    border: rgb(189, 134, 32) solid 6px;
+    border-radius: 10px;
+   margin-top: 40px;
+
+   
+  }
+  .im{
+    display: grid;
+    border-radius: 8px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 15px;
+   justify-content: center;
+    
+}
+
+    
+    /*responsive navigation bar css*/
+    @media(max-width:1200px) {
+        header ul{
+         position: fixed;
+         right:-100%;
+         top :100px;
+         background: black;
+         height:70%;
+         width: 50%;
+         flex-direction: column;
+         align-items:center;
+         transition:right 0.5s linear;
+     }
+     .menu{display: block;
+     width: 100px;
+     text-align: center;}
+     #chk1:checked ~ ul{ right: 0;}
+     footer{padding:20px;}
+        
+       
+      
+     }
+     @media(max-width:1500px){
+        header ul li {
+            font-size: 13px;
+            padding: 5px;
+        }
+        .logo{
+            font-size: 15px
+        }
+     }

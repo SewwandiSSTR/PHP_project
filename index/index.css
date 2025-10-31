@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: arial;
+}
+/*navigation bar css*/
+.head{
+    min-height: 80vh;
+    background: url(../index/img/6.jpeg);/*background immage*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: black;
+}
+#chk1{display:none;}
+i{color: #fff;
+cursor: pointer; 
+}
+.logo{
+    color: #e78f38;
+    margin-left: 50px;
+    flex: 1;
+    text-transform: uppercase;
+}
+header ul{
+    
+    display: flex;
+    justify-content:space-evenly;
+}
+header ul li {
+    list-style:none;
+    padding: 10px;
+
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    
+}
+header ul li a:hover{color: #e78f38;}
+.menu{
+    font-size: 2.5em;
+    display: none;
+}
+/*body message css*/
+.message{margin-left: 7%;
+    margin-top:13%;
+    position:absolute;
+    text-align: center;
+    color: white;
+    background:rgba(83, 82, 82, 0.5);
+    box-shadow: 0 0 10px #000;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.message h1{font-size: 36px;
+margin-bottom:10px;}
+.message p{font-size: 20px;
+    margin-bottom:10px;}
+
+
+.search-box{max-width:550px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+  
+}
+.search-box input{width: 70%;
+padding: 10px;
+outline: none;
+border: 0;
+border-radius: 5px 0 0  5px;
+font-size: 1rem;
+}
+.search-box button{
+    background-color: #e78f38;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius:  0 5px 5px 0  ;
+    font-size: 1rem;
+    color: #fff;
+    }
+/*recipe card css*/
+.recipes{
+    margin-left: 10%
+}
+.recipe-section{
+    width:90%;
+    display: grid;
+    border-radius: 8px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 10px;
+}
+.recipe-card 
+ img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.recipe-card{
+    background: #fff;
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+} .recipe-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    padding:15px 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.recipe-card a:hover{
+    color: #e78f38;
+}
+.recipes h2{
+    font-size: 22px;
+    padding: 20px;
+}
+.recipe-card h2{
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+}
+.recipe-card p{
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+/*footer css*/
+footer{
+    height:100px;
+    padding-top:0.4%;
+    background-color: #000000f2;
+    opacity: 0.9;
+    padding-left:42%;
+    justify-content: center;
+    color: white;
+
+}
+a{
+    text-decoration: none;
+}
+.f_p {
+
+color: #fff;
+}
+.f_p:hover{
+color: #e78f38;
+}
+/*responsive navigation bar css*/
+@media(max-width:1200px) {
+    header{
+        position: absolute;
+        top:0px;
+    }
+    footer{padding:20px;}
+    header ul{
+     position: fixed;
+     right:-100%;
+     top :100px;
+     background: black;
+     height:70%;
+     width: 50%;
+     flex-direction: column;
+     align-items:center;
+     transition:right 0.5s linear;
+ }
+ .head{
+    height: 400px;
+    margin-top:100px;
+}
+ .menu{display: block;
+ width: 100px;
+ text-align: center;}
+ #chk1:checked ~ ul{ right: 0;}
+   .message h1{font-size: 1.6em;} 
+   .message{margin-left:-32px;
+padding-left:10px;}
+ }
+ 
+ 
+ @media(max-width:1500px){
+    header ul li {
+        font-size: 13px;
+        padding: 5px;
+    }
+    .logo{
+        font-size: 15px
+    }
+ }

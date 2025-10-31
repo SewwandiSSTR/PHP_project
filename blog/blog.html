@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="css1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="file.js">
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+<div class="bg">
+  <header>
+    <input type="checkbox" name="" id="chk1">
+    <div class="logo">
+      <h1>👩‍🍳F o o d LK</h1>
+    </div>
+    <ul>
+      <li><a href="../index/index.html">HOME</a></li>
+      <li><a href="../menu/menu.html">MENU</a></li>
+      <li><a href="../offers/offer.html">OFFERS</a></li>
+      <li><a href="../blog/blog.html">BLOG</a></li>
+      <li><a href="../cooking tips/cooking_tip.html">COOKING TIPS</a></li>
+      <li><a href="../gallery/gallery.html">GALLERY</a></li>
+      <li><a href="../about us/about.html">ABOUT US</a></li>
+      <li><a href="../contactus/Contactus.html">CONTACT US</a></li>
+     <li><a href="../feedback/feedback.html">FEEDBACK</a></li>
+     <li><a href="../login/Login.html" class="log">LOG IN</a></li>
+    </ul>
+    <div class="menu">
+      <label for="chk1">
+        <i class="fa fa-bars"></i>
+      </label>
+    </div>
+  </header>
+
+</div>
+<main><br><br>
+
+  <h2 class="h2"> Flavorful Blog</h2>
+  <p class="demo">A quick and easy recipe made with simple ingredients and packed with flavor—perfect for any meal!</p>
+  <div class="card">
+    <div class="cards">
+      <h1>Kids Menu</h1>
+      <img src="../blog/img/pizza.jpeg" width="884" height="238">
+      <p> Mini Pizza</p>
+
+      <button type="button" class="read-more" onclick="togglePopup()">Read More</button>
+    </div>
+
+    <div class="cards">
+      <h1>Sides</h1>
+      <img src="../blog/img/potato.webp" width="884" height="238">
+      <p>Mashed Potatoes</p>
+      <button type="button" class="read-more" onclick="togglePopup2()">Read More</button>
+    </div>
+
+    <div class="cards">
+      <h1>Entrees</h1>
+      <img src="../blog/img/streek.png" width="884" height="238">
+      <p>Grilled Ribeye Steak</p>
+      <button type="button" class="read-more" onclick="togglePopup3()">Read More</button>
+
+    </div>
+
+  </div><br><br>
+  <div class="card">
+    <div class="cards">
+      <h1>Appetizers/Straters</h1>
+      <img src="../blog/img/soup.jpeg" width="884" height="238">
+      <p>Tomato Basil Soup</p>
+      <button type="button" class="read-more" onclick="togglePopup4()">Read More</button>
+    </div>
+
+    <div class="cards">
+      <h1>Dessert</h1>
+      <img src="../blog/img/lava.jpg" width="884" height="238">
+      <p>Chocolate Lava Cake</p>
+      <button type="button" class="read-more" onclick="togglePopup5()">Read More</button>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content1">
+      <span class="close-btn" onclick="togglePopup()">&times;</span>
+      <p>
+      <h3 class="small2"> Mini Pizza Magic</h3> <span class="small3">Big Flavor in Small Bites 🍕</span><br><br>
+
+      <center><img class="phone" src="../blog/img/pizza1.jpg" width="200px" height="150px"></center>
+      <span class="small">If you're a pizza lover (who isn't?), then mini pizzas are your new best friend. These
+        bite-sized delights are perfect for snacks, parties, or even a fun dinner night with the family.
+        The best part? You can customize them however you like — classic
+        pepperoni, veggie-loaded, or even a dessert version with Nutella and strawberries!</span>
+      </p><br />
+      <iframe width="424" height="238" src="https://www.youtube.com/embed/ihhfJYLHq1M"
+        title="mini pizza 🍕 with pizza sauce and how to freeze it" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="popup2" class="popup2">
+    <div class="popup-content2">
+      <span class="close-btn" onclick="togglePopup2()">&times;</span>
+      <p>
+      <h3 class="small2">Mashed Potatoes</h3> <span class="small3">Simple, Soulful, and Always
+        Satisfying</span><br /><br />
+      <center><img class="phone" src="../blog/img/potato.jpeg" width="200px" height="150px"></center>
+      <span class="small">
+        There’s something undeniably comforting about mashed potatoes. Maybe it’s the creamy texture, the
+        buttery flavor, or the way it hugs whatever you’re serving it with. It’s the side dish that never upstages the
+        main, yet it somehow steals the spotlight every time.
+      </span>
+      </p><br />
+      <iframe width="424" height="238" src="https://www.youtube.com/embed/5ocdVtv5-bA"
+        title="Delicious Homemade Potato Pancakes | Easy Recipe Using Mashed Potatoes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+    picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="popup3" class="popup3">
+    <div class="popup-content3">
+      <span class="close-btn" onclick="togglePopup3()">&times;</span>
+      <p>
+      <h3 class="small2">Garlic Ribeye Steak </h3> <span class="small3">Where Bold Meets Buttery
+        Perfection</span></br><br />
+      <center><img class="phone" src="../blog/img/steak1.jpg" width="200px" height="150px"></center>
+      <span class="small">
+        There are steaks… and then there’s garlic ribeye.
+
+        Thick, juicy, and marbled to perfection, a good ribeye is already a showstopper. But when you introduce golden,
+        caramelized garlic into the mix? You’re leveling up to something downright irresistible.</span>
+      </p></br>
+      <iframe width="424" height="238" src="https://www.youtube.com/embed/8uyytKlpUnE"
+        title="How To Cook The PERFECT Steak!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+   gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="popup4" class="popup4">
+    <div class="popup-content4">
+      <span class="close-btn" onclick="togglePopup4()">&times;</span>
+      <p>
+      <h3 class="small2">Basil Soup </h3><span class="small3">A Bowl of Freshness and Comfort</span> <br /><br />
+      <center><img class="phone" src="../blog/img/soup1.jpeg" width="200px" height="150px"></center>
+      <span class="small">
+        Basil soup is like a breath of fresh air in a bowl. It’s light yet flavorful, soothing but never boring.
+        With the vibrant green of fresh basil leaves and a delicate blend of aromatics, this soup is where simplicity
+        meets elegance.</span>
+      </p><br />
+      <iframe width="424" height="238" src="https://www.youtube.com/embed/W88m7LKFR9s"
+        title="Tomato Basil Soup Recipe | Chef Sanjyot Keer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+   gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="popup5" class="popup5">
+    <div class="popup-content5">
+      <span class="close-btn" onclick="togglePopup5()">&times;</span>
+
+      <p>
+      <h3 class="small2">🍫 Lava Chocolate Cake </h3><span class="small3">A Molten Masterpiece</span> <br><br />
+      <center><img class="phone" src="../blog/img/lava1.jpg" width="200px" height="150px"></center>
+      <span class="small">
+        There's something magical about slicing into a warm chocolate cake and watching rich,
+        gooey chocolate lava flow out. Lava Chocolate Cake is the perfect dessert for chocoholics — crisp on the
+        outside, molten and melty on the inside.</span>
+      </p><br />
+      <iframe width="424" height="238" src="https://www.youtube.com/embed/goGyZhuUydA"
+        title="Lava Cake Recipe (with Cocoa Powder)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope
+  ; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 👩‍🍳F o o d LK . All rights reserved.</p><br>
+  <p>
+    Follow us on:
+    <a class="f_p" href="https://facebook.com" target="_blank">Facebook</a> |
+    <a class="f_p" href="https://twitter.com" target="_blank">Twitter</a> |
+    <a class="f_p" href="https://instagram.com" target="_blank">Instagram</a>
+  </p>
+
+</footer>
+
+
+</body>
+
+</html>

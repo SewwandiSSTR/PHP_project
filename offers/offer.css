@@ -1,0 +1,254 @@
+
+a{
+  text-decoration: none;
+}
+*{
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: arial;
+}
+/*navigation bar css*/
+.head{
+  min-height: 80vh;
+  background: url(../img/6.jpeg);/*background immage*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: black;
+}
+#chk1{display:none;}
+i{color: #fff;
+cursor: pointer; 
+}
+.logo{
+  color: #e78f38;
+  background-color: black;
+  margin-left: 50px;
+  flex: 1;
+  text-transform: uppercase;
+}
+.logo h1{
+  background-color: black;
+  color:#e78f38;
+  font-family: arial;
+}
+header ul{
+  
+  display: flex;
+  justify-content:space-evenly;
+}
+header ul li {
+  list-style:none;
+  padding: 10px;
+
+}
+header ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  
+}
+header ul li a:hover{color: #e78f38;}
+.menu{
+  font-size: 2.5em;
+  display: none;
+}
+@media(max-width:1200px) {
+  header ul{
+   position: fixed;
+   right:-100%;
+   top :100px;
+   background: black;
+   height:70%;
+   width: 50%;
+   flex-direction: column;
+   align-items:center;
+   transition:right 0.5s linear;
+}
+table{
+  width:300px;
+  
+}
+td,tr,table{
+  border:5px solid black;
+}
+table img{
+  width:40px;
+  height:auto;
+}
+.head{min-height: 50vh;}
+.menu{display: block;
+width: 100px;
+text-align: center;}
+#chk1:checked ~ ul{ right: 0;}
+ .message h1{font-size: 1.6em;} 
+ .message{margin-left:1%;}
+}
+
+
+@media(max-width:1500px){
+  header ul li {
+      font-size: 13px;
+      padding: 5px;
+  }
+  .logo{
+      font-size: 15px;
+      background-color:none;
+  }
+}
+
+    
+@media (max-width: 1200px){
+    .head,nav{flex-direction: column;}
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #382d2d;
+    line-height: 1.6;
+    background-color: white;
+  }
+ h1{
+    color: black;
+    background-color: rgba(236, 176, 38, 0.982);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+ }
+ h2{
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 15px;
+ }
+ #AA{
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 15px;
+ }
+.head{
+    min-height: 100vh;
+    background: url(image/6.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.offerAll {
+    display: block;
+    unicode-bidi: isolate;
+    gap: 0.5rem;
+    padding: 2rem;
+    
+  }
+  
+  .offer {
+    background-color:black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    margin-inline: 5px;
+  }
+  
+  .offer:hover {
+    transform: translateY(-5px);
+  }
+  
+  .offer img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .offer h3 {
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem;
+    color: whitesmoke;
+  }
+  
+  .offer p {
+    color: whitesmoke;
+    margin-bottom: 1rem;
+  }
+  
+  .offer button {
+    background-color: rgb(239, 115, 20);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+    transition: background 0.3s;
+  }
+  .offer button:hover {
+    background-color: rgb(239, 115, 20);
+  }
+  table{
+    border: rgb(13, 13, 13);;
+    border:3px solid;
+    border-collapse: collapse;
+    margin-inline:5%;
+    width:90%;
+  }
+  th{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family:"Times New Roman";
+    color:rgb(13, 13, 13);;
+    padding: 0;
+    margin: 0%;
+    border-width: 2px;
+    
+  }
+  td{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-family:"Times New Roman";
+    color:rgb(13, 13, 13);
+    text-align: center;
+    padding: 0;
+    margin: 0%;
+    border-width: 2px;
+    
+  }
+ 
+  footer{
+    height: 100px;
+    padding-top:0.4%;
+    padding:20px;
+    background-color: #000000f2;
+    opacity: 0.9;
+    justify-content: center;
+    color: white;
+    padding-left: 42%;
+}
+.f_p {
+
+color: #fff;
+}
+.f_p:hover{
+color: #e78f38;
+}
+header{
+position: sticky;
+    top: 0;
+}

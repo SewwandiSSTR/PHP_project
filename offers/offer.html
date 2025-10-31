@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="offer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<header>
+    <input type="checkbox"  id="chk1" >
+    <div class="logo">
+        <h1>👩‍🍳F o o d LK</h1>
+    </div>
+    <ul>
+        <li><a href="../index/index.html">HOME</a></li>
+        <li><a href="../menu/menu.html">MENU</a></li>
+        <li><a href="../offers/offer.html">OFFERS</a></li>
+        <li><a href="../blog/blog.html">BLOG</a></li>
+        <li><a href="../cooking tips/cooking_tip.html">COOKING TIPS</a></li>
+        <li><a href="../gallery/gallery.html">GALLERY</a></li>
+        <li><a href="../about us/about.html">ABOUT US</a></li>
+        <li><a href="../contactus/Contactus.html">CONTACT US</a></li>
+        <li><a href="../feedback/feedback.html">FEEDBACK</a></li>
+        <li><a href="../login/Login.html" class="log">LOG IN</a></li>
+    </ul>
+    <div class="menu">
+        <label for="chk1">
+            <i class="fa fa-bars"></i>
+        </label>
+    </div>
+</header>
+    <body>
+        <script>
+            function myFun(){
+                window.alert("Please login to get offers");
+                window.open("../login/Login.html");
+            }
+            function myFun1(){
+                window.alert("do you want to oder now?? Please contact us.");
+                window.open("../contactus/Contactus.html");
+            }
+
+        </script>
+        <br>
+        <h1>🎉 Special Offers for You!!!🎉 </h1><br>
+        <p id="AA">Save Big with Our Latest Food Offers!!🍕🌮</p>
+
+    <main class="offerAll">
+        <div class="offer">
+            <img src="../offers/img/pizza1.jpeg">
+            <h3>🍕 Pizza Party Pack</h3><br>
+            <p>- Discount: Buy 1 Get 1 Free<br><br>
+                - Price: Rs. 1,200 (for 2 pizzas)<br><br>
+                - Valid Until: 15th May 2025<br><br>
+                - Details: Perfect for a party! Order one pizza and get another free! Choose your favorite toppings.
+            </p>
+            <br><br>
+            <button type="submit" name="submit" onclick="myFun()" >Order Now</button>     
+        </div>
+        <br>
+
+        <div class="offer">
+            <img src="../offers/img/soup1.jpeg">
+            <h3>🍲 Soup & Salad Combo Deal</h3><br>
+            <p>- Discount: Soup of the Day at 30% Off!<br><br>
+                - Price: Rs. 200 (was Rs. 285)<br><br>
+                - Valid Until: 15th May 2025<br><br>
+                - Details: A rotating selection of freshly made soups every day! Enjoy it with your lovers.  
+            </p>
+            <br>
+            <button type="submit" name="submit" onclick="myFun()" >Order Now</button>
+        </div>
+        <br>
+
+        <div class="offer">
+            <img src="../offers/img/cake.jpeg">
+            <h3>🍰 Buy 1 Get 1 Free Chocolate Lava Cake</h3><br>
+            <p> - Discount: Buy 1 Chocolate Lava Cake, Get 1 Free!<br><br>
+                - Price: Rs. 500 for 2 cakes (Rs. 250 per cake) <br><br>
+                - Valid Until: 15th May 2025<br><br>
+                - Details: Double the indulgence! Buy one chocolate lava cake and get another one for free. A perfect offer for sharing with a friend or loved one.
+            </p>
+            <br>
+            <button type="submit" name="submit" onclick="myFun()">Order Now</button>
+        </div>
+        <br>
+        <div class="offer">
+            <img src="../offers/img/potatos1.jpeg">
+            <h3>🥔🍲Buy 1 Get 1 Free: Mashed Potatoes</h3><br>
+            <p> - Discount: Buy 1 Mashed Potato Serving, Get 1 Free!<br><br>
+                - Price: Rs. 250 for 2 servings (Rs. 125 per serving)<br><br>
+                - Valid Until: 15th May 2025<br><br>
+                - Details: Double the indulgence! Buy one serving of mashed potatoes and get another one for free. Perfect for sharing or enjoying yourself.
+            </p>
+            <br>
+            <button type="submit" name="submit" onclick="myFun()">Order Now</button>
+        </div>
+        <br>
+    </main>
+    <h2>Try other Offers for You!!😋 Click the image to oder now 😋</h2><br>
+    <table border="15px" class="t1">
+        <tr>
+            <th>Food Iteam</th>
+            <th>Discount</th>
+            <th>Price</th>
+            <th>Valid Until</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>🍔 Burger & Fries Combo
+                <img src="../offers/img/burger.jpeg" class="table-FoodIteam" onclick="myFun1()">
+            </td>
+            <td>20% off</td>
+            <td>Rs. 500 (was Rs. 625)</td>
+            <td>30th May 2025</td>
+            <td>Enjoy a mouth-watering burger with a side of crispy fries. Only available for a limited time!</td>
+        </tr>
+        <tr>
+            <td>🍣 Sushi Set for 2
+                <img src="../offers/img/sushi.jpeg" class="table-Sushi" onclick="myFun1()">
+            </td>
+            <td>15% off</td>
+            <td>Rs. 100 (was Rs. 1175)</td>
+            <td>05th May 2025</td>
+            <td>Fresh sushi rolls with a dipping sauce for two. The ideal meal to share with someone special!
+            </td>
+        </tr>
+        <tr>
+            <td>🍧 Ice Cream Flavor of the Month
+                <img src="../offers/img/icecream.jpeg" class="table-Icecream" onclick="myFun1()">
+            </td>
+            <td>10% off</td>
+            <td>Rs. 85 (was Rs.150)</td>
+            <td>30th May 2025</td>
+            <td>Try our flavor of the month and enjoy a special discount. Every month, we feature a unique and exciting flavor!</td>
+        </tr>
+    </table>
+    <br>
+    <footer>
+        <p>&copy; 2025 👩‍🍳F o o d LK . All rights reserved.</p><br>
+        <p >
+          Follow us on:
+          <a class="f_p" href="https://facebook.com"  target="_blank">Facebook</a> |
+          <a class="f_p" href="https://twitter.com" target="_blank">Twitter</a> |
+          <a class="f_p" href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    
+      </footer>
+</body>
+</html>
