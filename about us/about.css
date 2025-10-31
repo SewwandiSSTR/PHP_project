@@ -19,7 +19,6 @@ header{
     box-shadow: 0 0 10px #000;
     background: black;
 }
-/*Navigation bar*/
 #chk1{display:none;}
 i{color: #fff;
 cursor: pointer; 
@@ -235,7 +234,7 @@ a{
     top: 40px;
     animation: rotate 10s infinite linear;
 }
-/*Rotate the image*/
+
 @keyframes rotate {
     0%{
         transform: rotate(0deg);
@@ -244,7 +243,7 @@ a{
         transform: rotate(360deg);
     }
 }
-/*About us description*/
+
 .main01-section .men-text p{
     font-family: 'Open Sans',sans-serif;;
     color: #3E2F1C	;
@@ -256,7 +255,7 @@ a{
 text-shadow: #3E2F1C 20px-20px;
 }
 
-/*Team members*/
+
 .team-section{
     display: flex;
     align-items: center;
@@ -448,6 +447,7 @@ margin-top: -400px;
 .firt4-section{
     display: flex;   
 }
+
 
 
 .meet-h3{
@@ -811,6 +811,68 @@ margin-top: 30px;
     }
   }
   
+
+
+
+
+  /*alter this csss code*/
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #3e2f1c;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffecc6;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f28c28;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    padding: 10px 15px;
+    width: 70%;
+    border: 2px solid #f28c28;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #f87f1d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #a35701;
+}
+
+ul {
+    text-align: left;
+    margin-top: 20px;
+}
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
 
 
 
