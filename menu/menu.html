@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <script id="img"src="menujs.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+  <header>
+  <input type="checkbox" name="" id="chk1">
+  <div class="logo">
+      <h1>👩‍🍳F o o d LK</h1>
+  </div>
+  <ul>
+      <li><a href="../index/index.html">HOME</a></li>
+      <li><a href="../menu/menu.html">MENU</a></li>
+      <li><a href="../offers/offer.html">OFFERS</a></li>
+      <li><a href="../blog/blog.html">BLOG</a></li>
+      <li><a href="../cooking tips/cooking_tip.html">COOKING TIPS</a></li>
+      <li><a href="../gallery/gallery.html">GALLERY</a></li>
+      <li><a href="../about us/about.html">ABOUT US</a></li>
+      <li><a href="../contactus/Contactus.html">CONTACT US</a></li>
+      <li><a href="../feedback/feedback.html">FEEDBACK</a></li>
+      <li><a href="../login/Login.html" class="log">LOG IN</a></li>
+  </ul>
+  <div class="menu">
+      <label for="chk1">
+          <i class="fa fa-bars"></i>
+      </label>
+  </div>
+          </header>
+
+<section>
+        </div >
+            <div class="head">
+                <div class="h1">Menu Item</div>
+            </div>
+        
+            <div>
+          <span>Select a category</span>
+            <div class="slide-nav">
+              
+                    <select id="mainCate"  onchange="select()" >
+                        <option   id="app" value="app">
+                                <div >
+                                    <p>Appetizer/starter</p>
+                                </div>
+                        </option>
+
+                        <option id="main" value="main" >
+                                <div >
+                                    <p>Main Cources /Entrees</p>
+                                </div>
+                        </option>
+
+                        <option   id="sides" value="sides">
+                                <div >
+                                    <p>sides</p>
+                                </div>
+                        </option>
+
+                        <option id="dessert" value="dessert">
+                                <div>
+                                    <p>Dessserts</p>
+                                </div>
+                        </option>
+
+                        <option   id="kid" value="kid">
+                                <div >
+                                    <p>Kid's Menu</p>
+                                </div>
+                        </option>
+                    </select>
+                </div>
+
+            <div class="description" id="des">
+
+            <div class="title" id="title">
+                <h1>Appetizer/starter</h1>
+            </div>
+            <div class="simple-div">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName1">Tomato Basil Soup</h1>
+                        <img id="img1" src="../menu/web img/appimg1.jpg">         
+                      </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop1">Tomato Basil Soup</h1> 
+                        <p><hr></p>
+                        <p id="price1"><b>Price :</b> $6.99 (Small),$10.99 (Family Pack)</p> 
+                        <p id="size1"><b>Family Pack :</b> Yes</p>
+                       
+                        <p id="ingre1"><b>Ingredients :</b>  Tomatoes, basil, garlic, onion, olive oil, vegetable stock, cream.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName2">Caesar Salad
+                        </h1>
+                        <img id="img2"src="../menu/web img/appimg2.jpg">            </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop2">Caesar Salad
+                        </h1> 
+                        <p><hr></p> 
+                        
+                          <p id="price2"><b>Price :</b> $7.50 (Small),$12.99 (Family Pack)
+                          </p>
+                          <p id="size2"><b>Family Pack :</b> Yes
+</p>
+                          <p id="ingre2"> <b>Ingredients :</b> Romaine lettuce, croutons, Parmesan cheese, Caesar dressing (egg, garlic, anchovies, lemon juice, Dijon mustard).
+                          </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName3">Bruschetta with Tomato and Basil
+                        </h1>
+                        <img id="img3"src="../menu/web img/appimg3.jpg">             </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop3">Bruschetta with Tomato and Basil
+                        </h1> 
+                        <p><hr></p> 
+                        
+                          <p id="price3"><b>Price :</b> $8.50 (Serves 4)
+                          </p>
+                          <p id="size3"><b>Family Pack :</b> No
+                          </p>
+                          <p id="ingre3"><b>Ingredients :</b> Baguette, tomatoes, fresh basil, garlic, olive oil, balsamic vinegar, salt.
+                          </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName4">Stuffed Mushrooms
+                        </h1>
+                        <img id="img4"src="../menu/web img/appimg4.jpg">             </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop4">Stuffed Mushrooms
+                        </h1> 
+                        <p><hr></p> 
+                      
+                          <p id="price4"><b>Price :</b>$9.99 (Serves 6)
+                          </p>
+                          <p id="size4"><b>Family Pack :</b> No
+                          </p><p id="ingre4"><b>Ingredients :</b> Mushrooms, cream cheese, breadcrumbs, garlic, Parmesan cheese, parsley, herbs.
+                          </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName5">Caprese Salad
+                        </h1>
+                        <img id="img5"src="../menu/web img/appim5.jpg">             </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop5">Caprese Salad
+                        </h1> 
+                        <p><hr></p> 
+                        
+                          <p id="price5"><b>Price :</b> $7.00 (Small),$13.99 (Family Pack)</p>
+                          <p id="size5"><b>Family Pack :</b> Yes
+                          </p>
+                          <p id="ingre5"><b>Ingredients :</b> Fresh mozzarella, tomatoes, basil, balsamic glaze, olive oil.
+                          </p>
+                      
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName6">Shrimp Cocktail
+                        </h1>
+                        <img id="img6"src="../menu/web img/appimg6.jpg">             </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop6">Shrimp Cocktail
+                        </h1> 
+                        <p><hr></p> 
+                      
+                          <p id="price6"><b>Price :</b> $12.00 (8 pieces)
+                          </p>
+                          <p id="size6"><b>Family Pack :</b> No</p>
+                          <p id="ingre6"><b>Ingredients :</b> Shrimp, cocktail sauce (ketchup, horseradish, lemon juice, Worcestershire sauce).
+                          </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName7">Chicken Wings (Buffalo or BBQ)
+                        </h1>
+                      <img id="img7"src="../menu/web img/appimg7.jpg">             </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop7">Chicken Wings (Buffalo or BBQ)
+                        </h1> 
+                        <p><hr></p> 
+                        
+                          <p id="price7"><b>Price :</b>8.99 (6 pieces), 16.99 (12 pieces)
+                          </p>
+                          <p id="size7"><b>Family Pack :</b> Yes
+                          </p>
+                          <p id="ingre7"><b>Ingredients :</b> Chicken wings, buffalo sauce (hot sauce, butter), BBQ sauce (tomato, vinegar, sugar, spices).
+                          </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName8">Spring Rolls (Vegetarian or Chicken)
+                        </h1>
+                        <img id="img8"src="../menu/web img/appimg8.jpg">             </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop8">Spring Rolls (Vegetarian or Chicken)
+                        </h1> 
+                        <p><hr></p> 
+                        
+                          <p id="price8"><b>Price :</b>$6.99 (4 pieces)</p>
+                          <p id="size8"><b>Family Pack :</b> Yes
+                          </p>
+                          <p id="ingre8"><b>Ingredients :</b> Rice paper, cabbage, carrots, mushrooms, chicken or tofu, soy sauce, sesame oil.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 id="mainName9">Deviled Eggs</h1>
+                        <img id="img9"src="../menu/web img/appimg9.jpg">             </div>
+                      <div class="flip-card-back">
+                        <h1 id="backtop9">Deviled Eggs</h1> 
+                        <p><hr></p> 
+                        
+                          <p id="price9"><b>Price :</b> 5.99 (6 pieces)
+                          </p>
+                          <p id="size9"><b>Family Pack :</b> No</p>
+                          <p id="ingre9"> <b>Ingredients :</b> Eggs, mayonnaise, mustard, vinegar, paprika.
+                          </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            
+    </div>
+  </div>
+        </div>
+      </section>
+
+        <footer>
+          <p>&copy; 2025 👩‍🍳F o o d LK . All rights reserved.</p><br>
+          <p>
+              Follow us on:
+              <a class="f_p" href="https://facebook.com" target="_blank">Facebook</a> |
+              <a class="f_p" href="https://twitter.com" target="_blank">Twitter</a> |
+              <a class="f_p" href="https://instagram.com" target="_blank">Instagram</a>
+          </p>
+  
+      </footer>
+</body>
+</html>
