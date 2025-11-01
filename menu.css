@@ -1,0 +1,334 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;  
+}
+/*header*/
+header{
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 0 10px #000;
+    background: black;
+}
+#chk1{display:none;}
+i{color: #fff;
+cursor: pointer; 
+}
+.logo{
+    color: #e78f38;
+    margin-left: 50px;
+    flex: 1;
+    text-transform: uppercase;
+}
+header ul{
+    
+    display: flex;
+    justify-content:space-evenly;
+}
+header ul li {
+    list-style:none;
+    padding: 10px;
+
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    
+}
+header ul li a:hover{color: #e78f38;}
+.menu{
+    font-size: 2.5em;
+    display: none;
+}
+
+@media(max-width:1200px) {
+    header ul{
+     position: fixed;
+     right:-100%;
+     top :100px;
+     background: black;
+     height:70%;
+     width: 50%;
+     flex-direction: column;
+     align-items:center;
+     transition:right 0.5s linear;
+ }
+ .head{min-height: 50vh;}
+ .menu{display: block;
+ width: 100px;
+ text-align: center;}
+ #chk1:checked ~ ul{ right: 0;}
+   .message h1{font-size: 1.6em;} 
+   .message{margin-left:1%;}
+ }
+ footer{padding-left:20px;
+margin:-50px;}
+ 
+ 
+ @media(max-width:1500px){
+    header ul li {
+        font-size: 13px;
+        padding: 5px;
+    }
+    .logo{
+        font-size: 15px
+    }
+ }
+
+/*section*/
+a{
+    text-decoration: none;
+}
+.head
+{
+    margin-top:110px;
+    margin-bottom:50px;
+    margin-inline:5%;
+    height:250px;
+    padding:20px;
+    width:90%;
+    position:relative;
+    background:url("../menu/web img/menu.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: rgba(252, 250, 250, 0.09) 0px 2px 1px, rgba(252, 250, 250, 0.09) 0px 4px 2px, rgba(252, 250, 250, 0.09) 0px 8px 4px, rgba(252, 250, 250, 0.09) 0px 16px 8px, rgba(252, 250, 250, 0.09) 0px 32px 16px;
+}
+.background
+{
+    background-color:black;
+    width:100%;
+    height:500px;
+}
+.h1
+{
+    margin-block: 75px;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    text-align:center;
+    padding:20px;
+}
+section
+{
+    background-color:white;
+    height:2200px;
+    width:100%;
+    margin:0px;
+}
+span
+{
+    color:black;
+    padding:20px;
+    font-size:30px;
+    margin-left:12px;
+    font-weight: bold;
+}
+select
+{
+    margin:2%;
+    background-color:#7a7a7a;
+    width:95%;
+    height:50px;
+    font-size:30px;
+    text-align:center;
+}
+option div
+{
+    background-color:#7a7a7a;
+    box-shadow:  rgba(0, 0, 0, 0.09) 2px 2px 1px, rgba(0, 0, 0, 0.09) 2px 4px 2px, rgba(0, 0, 0, 0.09) 2px 8px 4px, rgba(0, 0, 0, 0.09) 2px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width:300px;
+    height:50px;
+    text-align: center;
+    padding:5px;
+    border:2px solid white;
+
+}
+
+section p
+{
+    padding:10px;
+}
+.slide-nav
+{
+    position:relative;
+    margin:5px;
+
+}
+.slide-nav option:first-child:hover
+{
+    filter:brightness(50%)   
+}
+.slide-nav option div
+{
+    cursor: pointer;
+    width:325px;
+}
+
+.description
+{
+    width:100%;
+    height:750px;
+    background-color:rgb(248, 247, 247);
+    margin-inline:3%;
+    
+}
+.simple-div{
+    margin-inline:6%;
+}
+
+.example
+{
+    margin:40px;
+    margin-inline:60px;
+    background-color:white;
+    width:40%;
+    height:400px;
+    border-radius:10px;
+    border:none;
+    display:inline-block;
+    color:black;
+    padding:5px;
+
+}
+.title
+{
+    background-color:rgb(0, 0, 0);
+    text-align:center;
+    width:96%;
+    height:300px;
+    border:none;
+    font-size:35px;
+
+}
+
+.title h1
+{
+    padding-block:110px;
+    color:white;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    margin:30px;
+    margin-inline: 10px;
+    display:inline-block;
+    font-size: 11px;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card h1
+  {
+    text-align: center;
+    padding:10px;
+    color:black;
+    font-size:18px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #888888;
+    color: black;
+    transform: rotateY(180deg);
+    font-size:15px;
+  }
+img{
+    width:400px;
+    height:360px;
+}
+.img
+{
+    width:400px;
+    height:350px;
+}
+h3
+{
+    color:black;
+    padding:10px;
+    background-color:white;
+}
+.flip-card-back p
+{
+    
+    margin-left:25px;
+}
+
+footer{
+    height:90px;
+    padding-top:0.4%;
+    background-color: #000000f2;
+    opacity: 0.9;
+    padding-left:35%;
+    justify-content: center;
+    color: white;
+}
+.f_p {
+
+color: #fff;
+}
+.f_p:hover{
+color: #e78f38;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 400px)  {
+
+    section{
+      height:5000px;
+    }
+    div{
+        margin-inline:10px;
+    }
+    select{
+        margin-left:30px;
+    }  
+    .title h1{
+        font-size:40px;
+    }
+    .flip-card-inner {
+        box-shadow: none;
+    }
+  }
+  @media only screen and (min-width: 900px) and (max-width: 1325px){
+    section{
+        height:3100px;
+    }
+  }
