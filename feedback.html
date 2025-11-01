@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body >
+
+  <header>
+    <input type="checkbox" name="" id="chk1">
+    <div class="logo">
+        <h1>👩‍🍳F o o d LK</h1>
+    </div>
+    <ul>
+      <li><a href="../index/index.html">HOME</a></li>
+      <li><a href="../menu/menu.html">MENU</a></li>
+      <li><a href="../offers/offer.html">OFFERS</a></li>
+      <li><a href="../blog/blog.html">BLOG</a></li>
+      <li><a href="../cooking tips/cooking_tip.html">COOKING TIPS</a></li>
+      <li><a href="../gallery/gallery.html">GALLERY</a></li>
+      <li><a href="../about us/about.html">ABOUT US</a></li>
+      <li><a href="../contactus/Contactus.html">CONTACT US</a></li>
+     <li><a href="../feedback/feedback.html">FEEDBACK</a></li>
+     <li><a href="../login/Login.html" class="log">LOG IN</a></li>
+    </ul>
+    <div class="menu">
+        <label for="chk1">
+            <i class="fa fa-bars"></i>
+        </label>
+    </div>
+</header>
+<main>
+  <div class="content">
+    <h2>Feedback Form</h2>
+    <form action = 'feedback.php' method = 'post'>
+	
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name...">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email...">
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" >
+        <option value="">Choose rating</option>
+        <option value="5">★★★★★ - Excellent</option>
+        <option value="4">★★★★☆ - Good</option>
+        <option value="3">★★★☆☆ - Average</option>
+        <option value="2">★★☆☆☆ - Poor</option>
+        <option value="1">★☆☆☆☆ - Terrible</option>
+      </select>
+
+      <label for="message">Your Feedback:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Share your experience..."></textarea>
+
+      <button type="submit" onclick="Submit()">Submit Feedback</button>
+    </form>
+  </div>
+</main>  
+  <footer>
+    <p>&copy; 2025 👩‍🍳F o o d LK . All rights reserved.</p><br>
+    <p>
+        Follow us on:
+        <a class="f_p" href="https://facebook.com" target="_blank">Facebook</a> |
+        <a class="f_p" href="https://twitter.com" target="_blank">Twitter</a> |
+        <a class="f_p" href="https://instagram.com" target="_blank">Instagram</a>
+    </p>
+
+</footer>
+<script>
+  function Submit() {
+  // Get form values
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const rating = document.getElementById("rating").value;
+  const message = document.getElementById("message").value.trim();
+
+  // Basic validation
+  if (!name || !email || !rating || !message) {
+    alert("Please fill out all fields before submitting.");
+    return;
+  }
+
+   alert("Thank you for your feedback!");
+
+}
+
+</script>
+</body>
+</html>
